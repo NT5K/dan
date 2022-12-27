@@ -15,11 +15,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../dist/css/styles.css" rel="stylesheet" />
         <style>
-          .carousel-item img {
-            margin: 0 auto !important;
-            width: auto !important;
-            max-height: 450px !important;
-          }
+           .carousel-inner>.carousel-item    >img, .carousel-inner>.item>a>img {
+                display: block;
+                height: auto;
+                max-height: 300px;
+                max-width: 100%;
+                line-height: 1;
+                width: 100%;
+            }
+            .carousel-item img {
+              margin: 0 auto !important;
+              width: auto !important;
+              max-height: 400px !important;
+            }
         </style>
     </head>
     <body id="page-top" class="bg-dark text-white">
@@ -33,6 +41,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../statement.html">Artist</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../director.html">Director</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../writer.html">Writer</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../mentor.html">Mentor</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,43 +51,43 @@
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic1.JPG" alt="Universal Language picture 1">
+                                <img class="d-block" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic1.JPG" alt="Fox on the Fairway picture 1">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic2.JPG" alt="Universal Language picture 2">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic2.JPG" alt="Fox on the Fairway picture 2">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic3.JPG" alt="Universal Language picture 3">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic3.JPG" alt="Fox on the Fairway picture 3">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic4.JPG" alt="Universal Language picture 4">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic4.JPG" alt="Fox on the Fairway picture 4">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic5.JPG" alt="Universal Language picture 5">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic5.JPG" alt="Fox on the Fairway picture 5">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic6.JPG" alt="Universal Language picture 6">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic6.JPG" alt="Fox on the Fairway picture 6">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic7.JPG" alt="Universal Language picture 7">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic7.JPG" alt="Fox on the Fairway picture 7">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic8.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic8.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic9.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic9.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic10.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic10.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic11.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic11.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic12.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic12.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic13.JPG" alt="Universal Language picture 8">
+                                <img class="d-block w-100" src="../dist/assets/img/plays/Fox_on_the_Fairway/pic13.JPG" alt="Fox on the Fairway picture 8">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -103,7 +112,7 @@
                         <br>
                         <i>performed at</i> Chagrin Valley Little Theatre
                     </p>
-                    <p class="">
+                    <!-- <p class="">
                         with Nick Tysh, Nina Takacs, Gretta Pear-Takacs, Linda Pear-Takacs, Penny Takacs
                         <br><br>
                         set design by Nick Tysh
@@ -117,51 +126,16 @@
                         stage managed by&nbsp;Penny Takacs
                         <br><br>
                         Chagrin Valley Little Theatre, 2022
-                        <br><br>
-                        <!-- <a href="https://www.nytimes.com/2022/02/17/theater/sanaz-toossi-english-wish-you-were-here.html">
-                            <em>
-                                The New York Times Feature: Sanaz Toossi on her comedies about Iranian women
-                            </em>
-                        </a>
-                        <br>
-                        <em>
-                            Lortel Nominations: Outstanding Play (WINNER), Outstanding Ensemble, Outstanding Scenic Design
-                            <br>
-                            Drama League Nominations: Outstanding Production of a Play, Outstanding Direction of a Play
-                            <br>
-                            Outer Critics Circle Nomination: John Gassner Award
-                        </em>
-                        <br><br><br>
+                        <br><br> -->
                         <strong>REVIEWS<br><br></strong>
-                        [Critic’s Pick] “Director Knud Adams gently underlines the calm, almost classical rhythms of Toossi’s writing. 
-                        Chopinesque piano solos play between scenes. As the play contemplates the question of language from several angles, 
-                        the cube-like set, by Marsha Ginsberg, slowly rotates, offering in turn a street view of the building, 
-                        the classroom interior and an entry portico. The cast is uniformly excellent, in a suitably unshowy but fully lived-in way.”
+                        “Even if you find golf to be a tedious sport, you will find yourself enjoying Chagrin Valley Little Theater's production of "The Fox on the Fairway."”
                         <br>
-                        <a href="https://www.nytimes.com/2022/02/22/theater/english-review-sanaz-toossi.html">
+                        <a href="https://www.cleveland.com/chagrin-falls/2013/01/chagrin_valley_little_theater.html" target="_blank">
                             <em>
-                                Jesse Green, The New York Times
+                                Joan Rusek, special to cleveland.com
                             </em>
                         </a>
                         <em>
-                            <br><br>
-                        </em>
-                        “Mounted impeccably by director Knud Adams.”
-                        <em>
-                            <br>
-                        </em>
-                        <a href="https://www.washingtonpost.com/theater-dance/2022/03/01/english-iran-atlantic-theater-review/">
-                            <em>
-                                Peter Marks, The Washington Post
-                            </em>
-                        </a>
-                        
-                        <br><br>
-                        (photos by Marsha Ginsberg + 
-                        <a href="https://www.ahronfoster.com/">
-                            Ahron R. Foster</a>
-                            )
-                        </p> -->
                     </blockquote>
                 </div>
             </div>

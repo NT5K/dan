@@ -76,6 +76,26 @@
   }
 }
 
+@media (max-width: 768px) {
+  .div2 {
+    display: inline !important; 
+  }
+  .div1 {
+    display: none !important;
+  }
+  /* #image {
+    max-width: 100% !important;
+  } */
+}
+@media (min-width: 768px) {
+  .div2 {
+    display: none !important;
+  }
+  .div1 {
+    display: inline !important; 
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -236,11 +256,11 @@ sup {
   top: -0.5em;
 }
 
-a {
+.x {
   color: #bd5d38;
   text-decoration: underline;
 }
-a:hover {
+.x:hover {
   color: #974a2d;
 }
 

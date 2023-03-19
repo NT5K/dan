@@ -15,9 +15,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../dist/css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-       
-        <style>
-        </style>
         <style>
             .slide-img {
                 height: 100%;
@@ -61,58 +58,8 @@
             <div class="row mt-5 p-2">
                 <div class="col-lg-6 col-xs-12 text-center">
                       <div class="slider-wrapper mt-5">
-                        <div class="slider">
-                            <div class="slide">
-                                <div class="slide-img img-1">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic1.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-2">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic2.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-3">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic3.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-4">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic4.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <!-- <div class="slide">
-                                <div class="slide-img img-5">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic5.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-6">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic6.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-7">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic7.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-8">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic8.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-9">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic9.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-img img-10">
-                                    <img src="../dist/assets/img/plays/dr_jeckyll/pic10.jpeg" class="rounded-3 d-block w-100" alt="...">
-                                </div>
-                            </div> -->
-                            
+                        <div class="slider" id="slider">
+                            <!-- load in javascript below -->
                         </div>
                         <div id="controls">
                             <button class="previous m-1 p-2"><i class="fa-solid fa-angle-left"></i></button>
@@ -128,6 +75,8 @@
                         <i>written by</i> Jeffrey Hatcher
                         <br>
                         <b>OCTA Nomination: Best Play</b>
+                        <br>
+                        <i>photos by</i> Lily Moore-Coll
                     </p>
                 </div>
             </div>
@@ -148,6 +97,20 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./../dist/js/script.js"></script>
+        <!-- load images -->
+        <script>
+            for (let i = 3; i <= 102; i++) {
+                const slide = `
+                    <div class="slide">
+                        <div class="slide-img img-${i}">
+                            <img src="../dist/assets/img/plays/dr_jeckyll/${i}-min.jpg" class="rounded-3 d-block w-100" alt="...">
+                        </div>
+                    </div>
+                `;
+                // Append the generated slide code to a container element
+                document.getElementById('slider').innerHTML += slide;
+            }
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
         <script>
             const tnslider = tns({
@@ -162,6 +125,6 @@
                prevButton: ".previous",
                nextButton: ".next"
             })
-          </script>
+        </script>
     </body>
 </html>

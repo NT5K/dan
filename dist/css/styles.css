@@ -96,11 +96,34 @@
   }
 }
 
+.fadein2s {
+  -webkit-animation: 1s ease 0s normal forwards 1 fadein;
+  animation: 1s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+.fadein5s {
+  -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+  animation: 2s ease 0s normal forwards 1 fadein;
+}
+
+@font-face { font-family: Oswald; 
+  src: url('./../../dist/fonts/Oswald-VariableFont_wght.ttf'); } 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  font-family: 'Oswald', sans-serif;
+  /* font-size: var(--bs-body-font-size); */
+  /* font-weight: var(--bs-body-font-weight); */
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);

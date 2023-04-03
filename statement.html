@@ -16,14 +16,21 @@
         <link href="./dist/css/styles.css" rel="stylesheet">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXZ0RL1MPW"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-PXZ0RL1MPW');
+        </script>
         <style>
             footer {
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-              /* background-color: #333; */
-              color: #fff;
-              padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                /* background-color: #333; */
+                color: #fff;
+                padding: 10px;
             }
 
             @media only screen and (max-width: 1025px) {
@@ -31,15 +38,18 @@
                     position: relative;
                 }
             }
+            .bluelink {
+                color: #6565ff;
+            }
             
-        </style>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            .bluelink:hover {
+                color: #3232FF;
 
-            gtag('config', 'G-PXZ0RL1MPW');
-        </script>
+            }
+            .bluelink:visited {
+                color: #B265FF;
+            }
+        </style>
     </head>
     <body id="page-top" class="bg-dark text-white">
         <!-- Navigation-->
@@ -58,13 +68,13 @@
         </nav>
         <div class="container-fluid">
             <div class="container col-xxl-10">
-                <h2 class="text-white pt-5 mt-5">Artistic Statement</h2>
+                <h2 class="text-white pt-5 mt-5 fadein2s">Artistic Statement</h2>
                 <div class="row align-items-center g-5 py-2">
                     <div class="col-12 col-md-4 justify-content-center">
-                        <img src="./dist/assets/img/profile/dan5.jpg" class="d-block mx-auto img-fluid rounded-3" alt=""
+                        <img src="./dist/assets/img/profile/dan5.jpg" class="d-block mx-auto img-fluid rounded-3 fadein2s" alt=""
                             loading="lazy">
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-8 fadein2s">
                         <p class="lead text-left text-white">I am interested in moral terror. What is the line between good and evil? How can we blur that line? 
                             What would make a good person do bad, or vice versa?
                             <br>
@@ -76,10 +86,10 @@
                         </p>
                         <hr>
                         <p>
-                            <a class="" href="./dist/assets/resume/Dan_Takacs_Long_Form_Bio.pdf" target="_blank"><b>View Full Bio</b></a>
+                            <a class="bluelink" href="./dist/assets/resume/Dan_Takacs_Long_Form_Bio.pdf" target="_blank"><b>View Full Bio</b></a>
                         </p>
                         <p>
-                            <a class="" href="./dist/assets/resume/Daniel_Takacs_Directing_CV_2022.pdf" target="_blank"><b>View Resume</b></a>
+                            <a class="bluelink" href="./dist/assets/resume/Daniel_Takacs_Directing_CV_2022.pdf" target="_blank"><b>View Resume</b></a>
                         </p>
                         <!-- <p>
                             <a class="" href="mailto:danielatakacs@gmail.com"><b>Contact Me</b></a>
@@ -94,7 +104,7 @@
                 <p class="mb-3 mb-md-0 text-muted">&copy; <span id="year"></span> Dan Takacs&nbsp;</p>
                 <br>
                 <span class="mb-3 mb-md-0 text-muted">
-                    <a class="" href="mailto:danielatakacs@gmail.com"><b>Contact Me</b></a>
+                    <a class="bluelink" href="mailto:danielatakacs@gmail.com"><b>Contact Me</b></a>
                 </span>
               </div>
             </footer>

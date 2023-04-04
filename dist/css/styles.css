@@ -2191,6 +2191,9 @@ progress {
   .danname {
     font-size:25px;
   }
+  #jekylldirectorpic {
+    object-position: 0px -200px !important;
+  }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {

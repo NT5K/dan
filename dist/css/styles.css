@@ -118,11 +118,11 @@
 }
 
 @font-face { font-family: Oswald; 
-  src: url('./../../dist/fonts/Oswald-VariableFont_wght.ttf'); } 
+  src: url('./../../dist/fonts/GFSDidot-Regular.ttf'); } 
 body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  letter-spacing: .9px;
+  letter-spacing: .8px;
   /* font-size: var(--bs-body-font-size); */
   /* font-weight: var(--bs-body-font-weight); */
   line-height: var(--bs-body-line-height);

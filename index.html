@@ -24,24 +24,23 @@
             gtag('config', 'G-PXZ0RL1MPW');
         </script>
         <style>
-            .bluelink {
-                color: #6565ff;
+            @media only screen and (max-width: 600px) {
+              .responsive-image {
+                width: 100%;
+              }
             }
-            
-            .bluelink:hover {
-                color: #3232FF;
 
-            }
-            .bluelink:visited {
-                color: #B265FF;
-
+            @media only screen and (min-width: 601px) {
+              .responsive-image {
+                width: 40%;
+              }
             }
         </style>
     </head>
     <body id="page-top" class="bg-dark text-white">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
-            <a href="/" class="text-decoration-none"><h2 class="pt-5 text-white danname">Dan <br>Takács</h2></a>
+            <a href="/" class="text-decoration-none"><h3 class="pt-5 text-white">Dan <br>Takács</h3></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
@@ -58,19 +57,19 @@
                 <div class="row align-items-center g-5 py-5">
                     <div class="col-12 col-md-8">
                         <a href="about.html">
-                            <img src="./dist/assets/img/front.png" style="max-width: 100%" class="rounded-3 fadein2s" alt="main">
+                            <img src="./dist/assets/img/front.png" class="rounded-3 responsive-image" alt="main">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4" style="position: fixed; bottom: 0; width: 100%;">
               <div class="col-md-4 d-flex align-items-center">
                 <p class="mb-3 mb-md-0 text-muted">&copy; <span id="year"></span> Dan Takacs&nbsp;</p>
                 <br>
                 <span class="mb-3 mb-md-0 text-muted">
-                    <a class="bluelink" href="mailto:danielatakacs@gmail.com"><b>Contact Me</b></a>
+                    <a class="" href="mailto:danielatakacs@gmail.com"><b>Contact Me</b></a>
                 </span>
               </div>
             </footer>
